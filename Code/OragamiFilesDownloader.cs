@@ -84,18 +84,18 @@ namespace AccidentDataFlagger.Code
                 SessionOptions sessionOptions = new SessionOptions
                 {
                     Protocol = Protocol.Sftp,
-                    HostName = "ftp2.ups.com",
-                    UserName = "OrigamiSFTP",
-                    Password = "v9X17UW03qC",
-                    PortNumber = 10022,
-                    SshHostKeyFingerprint = "ssh-rsa 2048 HUBqpoH+WHd0kyyrHu9LX0IHUoFblmq041+cowtLumk="
+                    HostName = " ",
+                    UserName = "",
+                    Password = "",
+                    PortNumber = ,
+                    SshHostKeyFingerprint = "       "
                 };
 
                 using (Session session = new Session())
                 {
                     // Connect
                     session.Open(sessionOptions);
-                    session.MoveFile(fileName, "/Archive/");
+                    session.MoveFile(fileName, "/FileLocation/");
 
 
                 }
