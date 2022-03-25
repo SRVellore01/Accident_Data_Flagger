@@ -23,13 +23,6 @@ namespace AccidentDataFlagger
             InitializeComponent();
 
         }
-        //public void RunAsConsole(string[] args)
-        //{
-        //    OnStart(args);
-        //    Console.WriteLine("Press any key to exit...");
-        //    Console.ReadLine();
-        //    OnStop();
-        //}
        
 
         protected override void OnStart(string[] args)
