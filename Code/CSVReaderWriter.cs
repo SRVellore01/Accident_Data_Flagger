@@ -25,7 +25,7 @@ namespace AccidentDataFlagger.Code
             
             string FileLocationFolder = ConfigurationManager.AppSettings["FileLocation"];
             string FileLocationFolderWithSlash = ConfigurationManager.AppSettings["FileLocationSlash"];
-            //string FileLocationBackup = Configuration z
+            
             string FileLocationBackupFolderWithSlash = ConfigurationManager.AppSettings["FileLocationBackupSlash"];
 
 
@@ -46,9 +46,7 @@ namespace AccidentDataFlagger.Code
                 FileInfo file = new FileInfo(@""+ FileLocationFolderWithSlash + fileName2);
                 new CSVReaderWriter().ReadWriteDoc(fileName);
                 new OragamiFilesDownloader().MoveToArchive(fileName2);
-                //Deletes empty rowz ---
-                // fileName is in this format d:\OragamiFiles\Telematics_Crash_Data_.DT20210001.TM040049.csv 
-              //  File.Delete(fileName);
+                File.Delete(fileName);
 
 
 
